@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App01_ControleXF.Controle.Enter">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--Entry mais usados com poucos valores-->
+            <Entry         
+                x:Name="txtIdade"
+                Text=""
+                TextColor="Red"
+                Placeholder="Entre com uma idade"
+                PlaceholderColor="Azure"
+                IsPassword="True"
+                
+                Keyboard="Numeric"
+                BackgroundColor="Gray"
+            />
+
+            <Label x:Name="lblDuplicado"/>
+
+            <Editor x:Name="txtComentario" HeightRequest="200"/>
+            <Label x:Name="lblQuantidadeCaracteres "/>
+            <!--inputView-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App01_ControleXF.Controle.BarraPesquisa">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar 
+                       CancelButtonColor="Red"
+                       FontSize="24"
+                       FontAttributes="Italic"
+                       HorizontalTextAlignment="Center"
+                       Placeholder="Pesquise aqui"
+                       PlaceholderColor="Blue"
+                       Text=""
+                       TextColor="Red"
+                
+                       SearchButtonPressed="pesquisarButton"/>
+            
+            <StackLayout x:Name="ListResult">
+               
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

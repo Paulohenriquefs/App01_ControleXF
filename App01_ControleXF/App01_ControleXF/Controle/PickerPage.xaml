@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App01_ControleXF.Controle.PickerPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="picker"
+                Title="Principais empresas de Tecnologia"
+                TextColor="Blue"
+                
+                SelectedIndex="2"
+                SelectedIndexChanged="mudarIndex"
+                >
+                <Picker.Items>
+                    <x:String>Google</x:String>
+                    <x:String>Microsoft</x:String>
+                    <x:String>Apple</x:String>
+                    <x:String>Facebook</x:String>
+                    <x:String>Oracle</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label x:Name="Reusltado"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

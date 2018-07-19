@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App01_ControleXF.Controle.TableViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="Backup">
+                        <SwitchCell Text="Realizar Bachup Geral" On="False"/>
+                        <SwitchCell Text="Realizar Bachup dos Textos" On="False"/>
+                        <SwitchCell Text="Realizar Bachup de Imagens" On="False"/>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="BackUp Frequencia"/>
+                                <Slider Minimum="0" Maximum="7" HorizontalOptions="FillAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    
+                    <TableSection Title="Segurança">
+                        <SwitchCell Text="Senhas Criptografadas" On="True"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
