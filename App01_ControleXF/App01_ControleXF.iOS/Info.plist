@@ -34,5 +34,9 @@
 	<string>App01_ControleXF</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+  <dict>
+    <key>NSAllowsArbitaryLoads</key>
+      <true/>
+  </dict>
 </dict>
 </plist>
